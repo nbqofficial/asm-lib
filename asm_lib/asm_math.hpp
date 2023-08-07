@@ -1,22 +1,15 @@
 #pragma once
 
-namespace asm_math
-{
-	float asm_abs(float x);
-
-	float asm_mod(float x, float y);
-
-	float asm_floor(float x);
-
-	float asm_sqrt(float x);
-
-	float asm_pow(float x, int y);
-
-	float asm_sin(float x);
-
-	float asm_cos(float x);
-
-	float asm_tan(float x);
-
-	float asm_atan(float x);
+extern "C" namespace asm_math {
+	int abs(float x);
+	double modulo(float x, float y);
+	double ceil(float x);
+	double floor(float x);
+	double round(float x);
+	double sqrt(float x);
+	double pow(float x, int y);
+	double sin(float x);
+	double cos(float x);
+	double tan(float x);
+	double atan(float x);
 }
